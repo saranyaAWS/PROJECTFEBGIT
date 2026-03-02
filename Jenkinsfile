@@ -3,18 +3,18 @@ pipeline {
     
     stages{
         stage('build'){
-            step{
+            steps{
                 echo "welcome to jenkins"
             }
         }
         stage('test'){
-            step{
+            steps{
                 echo "welcome to testingteam"
                 sh 'touch day'
             }
         }
         stage('deploy'){
-            step{
+            steps{
                 echo "welcome to deploymentteam"
                 sh 'pwd'
             }
