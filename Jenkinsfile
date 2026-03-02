@@ -2,18 +2,18 @@ pipeline {
    agent any 
     
     stages{
-        stage("build"){
+        stage('build'){
             step{
                 echo "welcome to jenkins"
             }
         }
-        stage("test"){
+        stage('test'){
             step{
                 echo "welcome to testingteam"
                 sh 'touch day'
             }
         }
-        stage("deploy"){
+        stage('deploy'){
             step{
                 echo "welcome to deploymentteam"
                 sh 'pwd'
